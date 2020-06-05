@@ -1,0 +1,8 @@
+{
+  "name": "safe-places-server",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "heroku-prebuild": "cd expressjs && npm install && npm install knex -g && knex migrate:latest && knex seed:run"
+  }
+}
